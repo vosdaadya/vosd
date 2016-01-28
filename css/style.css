@@ -1,0 +1,320 @@
+@font-face{
+    src: url('../fonts/Gotham Light.ttf');
+    font-family: Gotham Light;
+}
+
+@font-face{
+    src: url('../fonts/Gotham Medium.ttf');
+    font-family: Gotham Medium;
+}
+
+body{
+    font-family: Gotham Light;
+}
+
+.floating-icon{
+    position: absolute;
+    border: solid 3px white;
+    top: calc(100% - 50px);
+    left: calc(100% - 50px);
+    padding: 5px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+}
+
+.back-to-top{
+    position: fixed;
+    border: solid 3px #d1d1d1;
+    top: calc(100% - 60px);
+    left: calc(100% - 50px);
+    padding: 5px;
+    border-radius: 50%;
+    color: #d1d1d1;
+    text-align: center;
+    display: none;
+}
+
+.master{
+    background-image: url('../images/home.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.master .item1{
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.master .item2{
+    flex: 1;
+}
+
+.navigation{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+}
+
+.navigation li{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    width: 150px;
+    height: 75px;
+    padding: 5px;
+    line-height: 55px;
+    background-image: url('../images/bone.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.navigation li:hover{
+    background-image: url('../images/bone active.png');
+}
+
+.navigation li a{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.getintouch .title, .about-us .title{
+    background-color: #3ca8d0;
+    width: 100%;
+    padding: 2%;
+    color: #fff;
+    font-family: Gotham Medium;
+    font-size: 30px;
+    text-align: center;
+}
+
+.about-us .title{
+    background-color: #a2e6e0;
+}
+
+.about-us .second-title{
+    background-color: #d9f1fa;
+    color: #4f98b2;
+    text-align: left;
+    padding-left: 5%;
+}
+
+.about-us .content{
+    color: #4f98b2;
+    font-size: 20px;
+    padding: 5%;
+    line-height: 40px;
+}
+
+.getintouch .content{
+    background-color: #43bbe8;
+    color: #fff;
+    display: flex;
+}
+
+.getintouch .content .items{
+    flex: 1;
+    padding: 3%;
+}
+
+.form-control, .btn-primary{
+    background-color: #7cd0ef;
+    border: none;
+}
+
+.item3{
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.rescued{
+    display: flex;
+    flex-direction: column;
+}
+
+.rescued .items{
+    display: flex;
+}
+
+.rescued .items .child{
+    flex: 1;
+}
+
+.dog_image{
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin-right: 20px;
+    background-size: 100%;
+    background-position: center;
+    box-shadow: 0 0 3px #333;
+}
+
+.credits{
+    background-color: #43bbe8;
+    font-size: 15px;
+    text-align: right;
+    padding: 20px;
+    color: #f1f1f1;
+}
+
+.donate-flex{
+    display: flex;
+}
+
+.donate-flex .item1{
+    flex: 2;
+}
+
+.donate-flex .item2{
+    flex: 1;
+}
+
+
+.contributors-flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contributors-flex .item1{
+    width: 30%;
+    border: 2px solid #43bbe8;
+}
+
+.contributors-flex .item2{
+    width: 30%;
+    border: 2px solid #43bbe8;
+}
+
+.contributors-flex .heading{
+    background-color: #43bbe8;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.bold{
+    font-family: Gotham Medium;
+}
+
+.scrollbar{
+    overflow-y: scroll;
+    height: 400px;
+}
+
+.scrollbar div{
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #43bbe8;
+    transition: all 0.5s;
+}
+
+.scrollbar div:last-child{
+    border-bottom: 0px;
+}
+
+.scrollbar div:hover{
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 1200px){
+    .master{
+        background-size: 120%;
+    }
+    
+    .rescued .items{
+        flex-direction: column;
+    }
+    
+    .rescued .items .child{
+        flex: auto;
+        margin-bottom: 80px;
+    }
+    
+}
+@media (max-width: 1060px){
+    .master{
+        background-size: 140%;
+    }
+}
+@media (max-width: 900px){
+    .master{
+        background-size: 160%;
+    }
+}
+
+@media (max-width: 840px){
+    .navigation{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .master .item1{
+        flex: 1;
+        justify-content: center;
+    }
+    
+    .getintouch .content{
+        flex-direction: column;
+    }
+    
+    .getintouch .content .items{
+        flex: auto;
+    }
+    
+    .donate-flex{
+        flex-direction: column;
+    }
+    
+    .donate-flex .items{
+        flex: auto;
+        margin-bottom: 50px;
+    }
+    
+    .contributors-flex{
+        flex-direction: column;
+    }
+    
+    .contributors-flex .items{
+        flex: auto;
+        margin-bottom: 50px;
+    }
+    
+    .contributors-flex .item1{
+        width: 100%;
+    }
+    
+    .contributors-flex .item2{
+        width: 100%;
+    }
+}
+
+@media (max-width: 750px){
+    .master{
+        background-size: 200%;
+        background-position: left;
+    }
+    
+    .rescue-master{
+        background-position: right;
+    }
+    
+    .donate-master{
+        background-position: center;
+    }
+}

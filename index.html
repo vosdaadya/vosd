@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Voice Of Stray Dogs</title>
+        <link rel = "stylesheet" href = "css/bootstrap.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/font-awesome.css">
+        <script src = "js/jquery.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    if($(window).scrollTop() == 0){
+                        $(".back-to-top").hide();
+                    }
+                    else{
+                        $(".back-to-top").fadeIn();
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        
+        <a href = "#getintouch">
+            <div class = "floating-icon">
+                <i class = "fa fa-arrow-down"></i>
+            </div>
+        </a>
+        
+        <a href = "#master">
+            <div class = "floating-icon back-to-top">
+                <i class = "fa fa-arrow-up"></i>
+            </div>
+        </a>
+        
+        <div class = "master" id = "master">
+            
+            <div class = "items item1">
+                <img src = "images/logo.png" width = "30%" class = "logo">
+            </div>
+            
+            <div class = "items item2">
+                <ul class = "navigation">
+                    <li style = "background-image: url('images/bone active.png');"><a>Home</a></li>
+                    <li><a href = "about.html">About Us</a></li>
+                    <li><a href = "rescue.html">Rescue</a></li>
+                    <li><a href = "sanctuary.html">Sanctuary</a></li>
+                    <li><a href = "donate.html">Donate</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class = "getintouch" id = "getintouch">
+            <div class = "title">
+                GET IN TOUCH
+            </div>
+            
+            <div class = "content">
+                <div class = "items item1">
+                    NAME<br><br>
+                    <input type = "text" class = "form form-control"><br>
+                    EMAIL ID<br><br>
+                    <input type = "email" class = "form form-control"><br>
+                    SUBJECT<br><br>
+                    <input type = "text" class = "form form-control"><br>
+                </div>
+                <div class = "items item2">
+                    MESSAGE<br><br>
+                    <textarea class = "form-control" style = "resize: none; height: 200px;"></textarea><br><br>
+                    <input type = "submit" class = "btn btn-primary" style = "float: right;" value = "SUBMIT">
+                </div>
+                <div class = "items item3">
+                    Bangalore Address<br>
+                    The TWB Building<br>
+                    4062, 19th Main<br>
+                    HAL II Stage<br>
+                    Bangalore - 560008<br>
+                    <br><br>
+                    NEW DELHI ADDRESS<br>
+                    3066, Block D<br>
+                    Pocket III<br>
+                    Vasant Kunj<br>
+                    New Delhi 110016<br><br>
+
+                </div>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>

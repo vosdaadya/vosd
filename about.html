@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>Voice Of Stray Dogs</title>
+        <link rel = "stylesheet" href = "css/bootstrap.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/font-awesome.css">
+        <script src = "js/jquery.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    if($(window).scrollTop() == 0){
+                        $(".back-to-top").hide();
+                    }
+                    else{
+                        $(".back-to-top").fadeIn();
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        
+        <a href = "#about">
+            <div class = "floating-icon">
+                <i class = "fa fa-arrow-down"></i>
+            </div>
+        </a>
+        
+        <a href = "#master">
+            <div class = "floating-icon back-to-top">
+                <i class = "fa fa-arrow-up"></i>
+            </div>
+        </a>
+        
+        <div class = "master" id = "master" style = "background-image: url('images/about.jpg');">
+            
+            <div class = "items item1">
+                <img src = "images/logo.png" width = "30%" class = "logo">
+            </div>
+            
+            <div class = "items item2">
+                <ul class = "navigation">
+                    <li><a href = "index.html">Home</a></li>
+                    <li style = "background-image: url('images/bone active.png');"><a href = "#">About Us</a></li>
+                    <li><a href = "rescue.html">Rescue</a></li>
+                    <li><a href = "sanctuary.html">Sanctuary</a></li>
+                    <li><a href = "donate.html">Donate</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class = "about-us" id = "about">
+            <div class = "title">
+                ABOUT US
+            </div>
+            <div class = "content">
+                Established in 2012, the Voice of Stray Dogs (VOSD) was founded by Rakesh Shukla to put an end to the unjust treatment of animals in today's society. Although India is one of the few cultures in the world that has always propagated the idea of compassion towards all living beings, man, in the race for "development", increasingly sees animals as mere means to an end. This has led to the prevalent mentality of animals considered as resources, free for mankind to abuse and exploit as seen fit.<br><br>
+
+VOSD, thus, was established as a call to action in an age where animals are denied their very basic rights, despite living harmoniously alongside man for centuries. With immediate response, continual updates, and expert care, VOSD's motto is to never give up on man's best friend. 
+            </div>
+        </div>
+        
+        <div class = "about-us">
+            <div class = "title">
+                VOSD SERVICES
+            </div>
+            <div class = "content">
+                VOSD contributes to making the world a better place for strays across India in multiple ways:<br><br>
+
+                <ul>
+                    <li>RESCUE - Highly advanced, VOSD runs the world's largest citywide rescue for dogs. Any time of day or night, a reported dog in need will receive immediate care from private veterinarians.<br><br></li>
+
+                    <li>LEGAL ASSISTANCE - The VOSD team of lawyers work tirelessly to provide consultation in situations where legal assistance is needed to fight for an individual's dog.<br><br></li>
+
+
+                    <li>ADVISORY BOARD - Made up of some of the country's most involved activists, the advisory board provides strategic inputs and keep the ball rolling in animal welfare.<br><br></li>
+
+                    <li>VOSD LastRites - From picking up your dog to cremation to even delivering the ashes of your beloved companion to you, we ensure that your dog will get dignity in death. Photographs of the rites are taken for your records as well. Find out more <a href = "https://www.facebook.com/strays.in/app/410312912374011/"><b style = "font-family: Gotham Medium;">here</b></a>.<br><br></li>
+
+                    <li>Charity Hospital - Wanting nothing but the best for every dog, the treatment and care of every VOSD rescue has been outsourced to the city's best private veterinarians. Now, we wish to go one step further. <a href = "donate.html"><b style = "font-family: Gotham Medium;">Help us</b></a> by contributing to building a state-of-the-art charity hospital for our city's homeless animals.<br><br></li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+        <div class = "getintouch" id = "getintouch">
+            <div class = "title">
+                GET IN TOUCH
+            </div>
+            
+            <div class = "content">
+                <div class = "items item1">
+                    NAME<br><br>
+                    <input type = "text" class = "form form-control"><br>
+                    EMAIL ID<br><br>
+                    <input type = "email" class = "form form-control"><br>
+                    SUBJECT<br><br>
+                    <input type = "text" class = "form form-control"><br>
+                </div>
+                <div class = "items item2">
+                    MESSAGE<br><br>
+                    <textarea class = "form-control" style = "resize: none; height: 200px;"></textarea><br><br>
+                    <input type = "submit" class = "btn btn-primary" style = "float: right;" value = "SUBMIT">
+                </div>
+                <div class = "items item3">
+                    Bangalore Address<br>
+                    The TWB Building<br>
+                    4062, 19th Main<br>
+                    HAL II Stage<br>
+                    Bangalore - 560008<br>
+                    <br><br>
+                    NEW DELHI ADDRESS<br>
+                    3066, Block D<br>
+                    Pocket III<br>
+                    Vasant Kunj<br>
+                    New Delhi 110016<br><br>
+
+                </div>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>
